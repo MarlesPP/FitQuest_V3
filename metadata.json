@@ -1,0 +1,5 @@
+{
+  "name": "FitQuest RPG",
+  "description": "A gamified fitness application that turns home workouts into an RPG adventure. Level up, earn gold, and customize your hero by completing quests (workouts).",
+  "requestFramePermissions": []
+}

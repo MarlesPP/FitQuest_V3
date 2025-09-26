@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitQuest RPG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .bg-cross-gradient-mythic {
+            background-image: conic-gradient(from 45deg, #8b5cf6, #dc2626, #8b5cf6, #dc2626, #8b5cf6);
+        }
+        @keyframes enchanted-glow {
+            0%, 100% { 
+                box-shadow: 0 0 4px #06b6d4, 0 0 8px #06b6d4, 0 0 12px #8b5cf6, inset 0 0 2px #06b6d4; 
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 8px #8b5cf6, 0 0 16px #8b5cf6, 0 0 24px #06b6d4, inset 0 0 4px #8b5cf6;
+                transform: scale(1.02);
+            }
+        }
+        .enchanted-glow {
+            animation: enchanted-glow 4s infinite ease-in-out;
+        }
+        @keyframes legendary-glow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .legendary-glow {
+            background: linear-gradient(270deg, #1e3a8a, #facc15, #1e40af, #facc15, #1e3a8a);
+            background-size: 400% 400%;
+            animation: legendary-glow 8s ease infinite;
+        }
+        .legendary-glow-bg {
+            background: linear-gradient(270deg, #111827, #fde047, #ffffff, #fde047, #111827);
+            background-size: 400% 400%;
+            animation: legendary-glow 8s ease infinite;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
