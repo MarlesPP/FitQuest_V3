@@ -42,7 +42,7 @@ export const generateWorkout = async (
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash", // Cambia aquí si quieres usar otro modelo gratuito
+      model: "gemini-2.5-flash-lite", // Cambia aquí si quieres usar otro modelo gratuito
       contents: prompt,
       config: {
         responseMimeType: "application/json",
