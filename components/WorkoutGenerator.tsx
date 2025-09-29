@@ -30,7 +30,7 @@ const WorkoutGenerator: React.FC<WorkoutGeneratorProps> = ({ onGenerate }) => {
 
     return (
         <div className="max-w-2xl mx-auto bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl border border-gray-700 animate-fade-in">
-            <h2 className={`text-3xl font-orbitron font-bold text-center mb-6 ${theme === 'yellow' ? 'text-yellow-300' : 'text-cyan-300'}`}>{t('generator.title')}</h2>
+            <h2 className={`text-3xl font-orbitron font-bold text-center mb-6 ${theme === 'yellow' ? 'text-yellow-300' : 'text-cyan-300'}`}>{t('generator?.title')}</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                     <label className="block text-lg font-bold text-gray-300 mb-2 font-orbitron">{t('generator.difficulty')}</label>
