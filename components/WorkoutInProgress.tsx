@@ -14,9 +14,9 @@ const WorkoutInProgress: React.FC<WorkoutInProgressProps> = ({ workout, onComple
     const { t } = useLanguage();
     const { theme } = useTheme();
     const allExercises = useMemo(() => [
-        ...workout.warmup.exercises.map(e => ({ ...e, section: workout.warmup.title })),
-        ...workout.mainWorkout.exercises.map(e => ({ ...e, section: workout.mainWorkout.title })),
-        ...workout.cooldown.exercises.map(e => ({ ...e, section: workout.cooldown.title })),
+        ...workout.warmup.exercises.map(e => ({ ...e, section: workout.warmup?.title })),
+        ...workout.mainWorkout.exercises.map(e => ({ ...e, section: workout.mainWorkout?.title })),
+        ...workout.cooldown.exercises.map(e => ({ ...e, section: workout.cooldown?.title })),
     ], [workout]);
 
     const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
